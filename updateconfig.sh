@@ -1,14 +1,16 @@
 #!/usr/bin/bash
 
-# 将在内存文件中的个人配置备份到U盘
-# 1、拷贝用户目录的.ssh 文件夹、bash*、zsh*文件到 /boot 
-# 2、重新压缩 oh-my-zsh
-# 3、拷贝/boot/config/custom.scripts 目录到 /mnt/user/tmp 下
-
+# 进入跟目录
 cd /root
-#cp -u /root/.ssh/* /boot/config/custom.scripts/.ssh/
-#cp -u /root/bash* /boot/config/custom.scripts/
-#cp -u /root/zsh* /boot/config/custom.scripts/
 
-#tar -zcvf oh-my-zsh.tar.gz .oh-my-zsh
-#cp oh-my-zsh.tar.gz /boot/config/custom.scripts/
+# 创建一个备份目录，如果不存在就创建，存在即忽略
+mkdir -p /boot/config/unraid-config-back
+
+# 备份docker-compose
+sudo cp -rf /usr/local/bin/docker-compose /boot/config/unraid-config-back
+
+# 备份node
+# sudo cp -rf /usr/local/node-v16.5.0-linux-x64 /boot/config/unraid-config-back
+
+
+
