@@ -2,7 +2,7 @@
 
 # 公共配置
 
-BASE_PATH=/tmp/custom.scripts
+BASE_PATH=/tmp/custom.script
 LOG_PATH=$BASE_PATH/log.log
 
 export BASE_PATH

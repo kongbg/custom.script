@@ -2,7 +2,7 @@
 
 # 运行所有脚本
 
-cd /tmp/custom.scripts
+cd /tmp/custom.script
 
 . config.sh
 . commfunc.sh

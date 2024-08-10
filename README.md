@@ -3,8 +3,8 @@ unraid 开机恢复配置
 1. 将项目clone到 `/boot/config`下，在 `/boot/config/go` 文件中最后添加 
 
    ```shell
-   cp -r /boot/config/custom.scripts /tmp
-   bash /tmp/custom.scripts/startall.sh
+   cp -r /boot/config/custom.script /tmp
+   bash /tmp/custom.script/startall.sh
    ```
 
 2. 文件说明，脚本里面一般都有必要的注释说明
