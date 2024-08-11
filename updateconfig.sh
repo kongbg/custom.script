@@ -12,5 +12,8 @@ sudo cp -rf /usr/local/bin/docker-compose /boot/config/unraid-config-back
 # 备份node
 # sudo cp -rf /usr/local/node-v16.5.0-linux-x64 /boot/config/unraid-config-back
 
+# 备份zsh
+sudo cp -rf /bin/zsh /boot/config/unraid-config-back
+
 
 
