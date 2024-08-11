@@ -21,3 +21,6 @@ sudo ln -s /usr/lib64/libtinfo.so.6 /usr/lib64/libtinfo.so.5
 # 修复缺少/usr/lib64/zsh文件问题
 # fix: zsh: failed to load module `zsh/zle': /usr/lib64/zsh/5.0.2/zsh/zle.so: cannot open shared object file: No such file or directory
 cp -rf /boot/config/unraid-config-back/zsh2 /usr/lib64/
+
+# 改名
+mv /usr/lib64/zsh2 /usr/lib64/zsh
