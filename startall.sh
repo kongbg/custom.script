@@ -8,7 +8,7 @@ cd /tmp/custom.script
 . commfunc.sh
 
 # 恢复 cp 原始行为，即使用 -rf 不提示覆盖 
-unalias cp
+#unalias cp
 
 cd $BASE_PATH
 files=$(ls $BASE_PATH | grep -E "set.*.sh")
@@ -18,7 +18,7 @@ do
 done
 
 # 恢复 cp 别名，即使用 -rf 提示覆盖 
-alias cp='cp -i'
+#alias cp='cp -i'
 
 files=$(ls $BASE_PATH | grep -E "loop.*.sh")
 for filename in $files
