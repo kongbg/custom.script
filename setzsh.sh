@@ -15,4 +15,5 @@ sudo chmod +x /bin/zsh
 echo "/bin/zsh" >> /etc/shells
 
 # 修复确实libtinfo.so.5文件问题
+# fix: zsh: error while loading shared libraries: libtinfo.so.5: cannot open shared object file: No such file or directory
 sudo ln -s /usr/lib64/libtinfo.so.6 /usr/lib64/libtinfo.so.5
