@@ -1,11 +1,11 @@
 #!/usr/bin/bash
 
-# 恢复 docker-compose
+# 恢复 node
 
 # 进入跟目录
 cd /root
 
-# 复制docker-compose 到/usr/local/bin/
+# 复制node 到/usr/local/bin/
 cp -rf /boot/config/unraid-config-back/node-v16.5.0-linux-x64 /usr/local
 
 # 删除老node
