@@ -6,7 +6,7 @@
 cd /root
 
 # 复制node 到/usr/local/bin/
-cp -rf /boot/config/unraid-config-back/node-v16.5.0-linux-x64 /usr/local
+cp -rf /mnt/user/kongbage/node/node-v16.5.0-linux-x64 /usr/local
 
 # 删除老node
 rm -rf /usr/bin/node
@@ -19,3 +19,7 @@ rm -rf /usr/bin/npx
 ln -s /usr/local/node-v16.5.0-linux-x64/bin/node /usr/bin/ 
 ln -s /usr/local/node-v16.5.0-linux-x64/bin/npm /usr/bin/ 
 ln -s /usr/local/node-v16.5.0-linux-x64/bin/npx /usr/bin/ 
+# 设置权限
+sudo chmod +x /usr/bin/node
+sudo chmod +x /usr/bin/npm
+sudo chmod +x /usr/bin/npx
